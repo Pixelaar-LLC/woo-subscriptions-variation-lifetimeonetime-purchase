@@ -3,7 +3,7 @@
  * Plugin Name: Woo Subscriptions Variation Lifetime/Onetime Purchase
  * Plugin URI: http://logicfire.in
  * Description: This plugin add the "Lifetime/Onetime Purchase" functionality to Woocommerce Subscriptions plugin .
- * Version: 1.2.2
+ * Version: 1.2.3
  * Author: Logicfire
  * Author URI: https://profiles.wordpress.org/logicfire
  * Requires at least: 4.0.0
