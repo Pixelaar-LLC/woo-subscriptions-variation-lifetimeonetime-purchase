@@ -75,6 +75,19 @@ function woo_lifetime_product_first_renewal_payment_time( $first_renewal_timesta
 	return $first_renewal_timestamp;
 }
 
+
+// Fix bug in WooCommerce Stripe payment intent request with "lifetime" not being a valid interval
+add_filter( 'wc_stripe_generate_create_intent_request', 'woo_lifetime_create_intent_request', 11, 3 );
+function woo_lifetime_create_intent_request( $request, $order, $prepared_source ) {
+	if ( isset( $request['payment_method_options']['card']['mandate_options']['interval'] ) ) {
+		if ( "lifetime" === $request['payment_method_options']['card']['mandate_options']['interval'] ) {
+		    $request['payment_method_options']['card']['mandate_options']['interval'] = 'sporadic';
+		}
+	}
+	return $request;
+}
+
+
 // PayPal Checkout parameters
 add_filter( 'woocommerce_paypal_args', 'paypal_subscription_to_single_payment', 99, 2);
 function paypal_subscription_to_single_payment($args, $order){
