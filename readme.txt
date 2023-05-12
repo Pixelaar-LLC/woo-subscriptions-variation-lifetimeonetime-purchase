@@ -4,7 +4,7 @@ Donate link:
 Tags: Woocommerce, Woocommerce subscription variations, Lifetime option, Lifetime interval subscription, Woocommerce subscription variations lifetime, subscription variations lifetime, onetime purchase Woocommerce subscription
 Requires at least: 4.0.0
 Tested up to: 5.1
-Stable tag: 1.2.1
+Stable tag: 1.2.2
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -38,9 +38,12 @@ Installing "Woo Subscriptions Variation Lifetime/Onetime Purchase" can be done e
 
 == Upgrade Notice ==
 
-= 1.2.1 =
+= 1.2.2 =
 
 == Changelog ==
+
+= 1.2.2 =
+Fix renewal display in cart.
 
 = 1.2.1 =
 Bug fixes.
