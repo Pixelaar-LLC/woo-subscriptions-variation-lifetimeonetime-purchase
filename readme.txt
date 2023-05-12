@@ -4,7 +4,7 @@ Donate link:
 Tags: Woocommerce, Woocommerce subscription variations, Lifetime option, Lifetime interval subscription, Woocommerce subscription variations lifetime, subscription variations lifetime, onetime purchase Woocommerce subscription
 Requires at least: 4.0.0
 Tested up to: 5.1
-Stable tag: 1.2.2
+Stable tag: 1.2.3
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -33,14 +33,19 @@ Installing "Woo Subscriptions Variation Lifetime/Onetime Purchase" can be done e
 
 = How do I contribute? =
 
+https://github.com/robertstaddon/woo-subscriptions-variation-lifetimeonetime-purchase
+
 == Screenshots ==
 
 
 == Upgrade Notice ==
 
-= 1.2.2 =
+= 1.2.3 =
 
 == Changelog ==
+
+= 1.2.3 =
+Fix bug that broke payments with latest versions of WooCommerce Stripe plugin
 
 = 1.2.2 =
 Fix renewal display in cart.
